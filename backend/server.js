@@ -9,20 +9,10 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 //pusher
-const pusher = new Pusher({
-  appId: "1139508",
-  key: "77ba1ab964977129a9ba",
-  secret: "dd1104307b346b70e53f",
-  cluster: "eu",
-  useTLS: true,
-});
 
 //middlewear
 app.use(express.json());
 app.use(cors());
-
-const connection_db =
-  "mongodb+srv://admin:1DBgkSeXVO0B0PH2@cluster0.wgj7m.mongodb.net/chat-mern?retryWrites=true&w=majority";
 
 const db = mongoose.connection;
 

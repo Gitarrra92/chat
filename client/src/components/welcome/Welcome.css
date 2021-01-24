@@ -1,0 +1,27 @@
+.welcome__container {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome__main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__main h1 {
+  margin-bottom: 30px;
+}
+
+.welcome__input {
+  margin-bottom: 15px;
+}
+
+.welcome__input input {
+  height: 25px;
+  border-radius: 8px;
+  outline: none;
+}

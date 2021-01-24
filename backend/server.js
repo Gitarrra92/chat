@@ -31,7 +31,6 @@ db.once("open", () => {
 
   const msgCollection = db.collection("messagecontents");
   const changeStream = msgCollection.watch();
-  console.log(changeStream);
 
   changeStream.on("change", (change) => {
     console.log("change occured", change);
@@ -88,5 +87,3 @@ app.listen(port, async () => {
       console.log("it works", port);
     });
 });
-//QqXFJvc7O3CBNq5W
-//1DBgkSeXVO0B0PH2
